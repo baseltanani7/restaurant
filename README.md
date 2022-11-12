@@ -2,6 +2,7 @@
 
 A burger and pizza restaurant that offers all its meals, prices and delivery service, if any, and you can browse their menu through their website.
 
+![loading](https://user-images.githubusercontent.com/117764506/201473933-8a80c461-f70e-404d-b90d-46b02be339ec.png)
 
 ![Home Page](https://user-images.githubusercontent.com/117764506/201473750-5667e859-c63c-4a74-aae4-529fa51b2f0b.png)
 
