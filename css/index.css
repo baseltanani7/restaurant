@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,13 +8,10 @@
 }
 
 body {
+    font-family: Tajawal !important;
     height: 1500px;
 }
 
-@font-face {
-    src: url(../fonts/fonts3/ArbFONTS-Cairo-Bold-3.ttf);
-    font-family:dubai;
-}
 
 /*--------- load ------------*/
 
@@ -262,22 +262,22 @@ body {
 } 
 
 
-/* @media (min-width: 290px) and (max-width: 500px) {
+@media (min-width: 290px) and (max-width: 500px) {
     .load-h1 {
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     #cooking {
-        height: 50vh;
-        width: 50vh;
+        height: 70vh;
+        width: 100%;
     }
-    #cooking #area22 {
+    /* #cooking #area22 {
         height: 25%;
         width: 25%;
         margin-top: 130px !important;
         margin-right: 110px !important;
-    }
-} */
+    } */
+}
 
 
 /*-------------------- header -------------------*/
@@ -288,114 +288,51 @@ body {
     direction: rtl;
     background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
     box-shadow: 0 4px 24px 0 rgb(22 20 18 / 10%); 
-    height: 110px;
+    height: 90px;
     z-index: 1 !important;
 }
 
-.parent-logo {
-  display: flex;
-  transition: transform .30s;
-
-}
-.parent-logo:hover {
-  transform: scale(1.02);
-
-}
-
 .logo {
-  height: 60px !important;
-  width: 130px !important;
-  margin-top: 13px;
+    height: 60px !important;
+    width: 130px !important;
+    margin-top: 13px;
 }
 
-.parent-nav {
-  display: flex;
-  justify-content: space-between;
-  direction: rtl;
-  /* z-index: 2; */
-  float: right;
-  margin-top: 5px !important;
-  margin-left: -12px;
+.navbar-nav {
+    gap: 40px;
 }
 
-.nav-bar{
-  width: 500px;
-  gap: 25px;
+.navbar-nav li a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: Tajawal;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-ul.container {
-  margin-right: 0px !important;
-  text-align: center;
+.navbar-nav li a:hover {
+    transform: scale(1);
+    opacity: 1;
+    color: #c51927 !important;
 }
 
-ul.container a{
-  color: #FFF;
-  text-decoration: none;
-  font: 20px Raleway;
-  padding: 0;
-  position: relative;
-  /* z-index: 0; */
-  cursor: pointer;
-}
-ul.highlightTextIn a:focus {
-  color: rgba(0, 0, 0, 0.7); 
-}
-ul.highlightTextIn a:before {
-  position: absolute;
-  color: #c51927;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  content: attr(alt);
-  transition: all 0.3s;
-  transform: scale(0.8);
-  opacity: 0;
-}
-
-ul.highlightTextIn a:hover{
-  transform: scale(1);
-  opacity: 1;
-  color: #c51927 !important;
-}
-
-ul.highlightTextIn a{
-  color: rgba(0, 0, 0, 0.7); 
-}
-
-ul.highlightTextIn a:before{
-  transform: scale(1.2);
-  color: #c51927 !important;
-} 
-
-.dropdown-menu {
-  border-radius: 20px !important;
-  margin-left: -30px !important;
-
-}
-
-.dropdown-menu li a {
-  direction: rtl;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  font-size: 15px !important;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #c51927;
-  color: #fff !important;
+.nav-link.active {
+    color: #c51927 !important;
 }
 
 #user {
-  height: 40px;
-  width: 200px;
-  color: black;
-  border: none;
-  border: 1px solid #c9c9c9;
-  border-radius: 50px;
-  padding-right: 10px;
-  font-size: 17px;
-  outline: none;
+    height: 40px;
+    width: 200px;
+    color: black;
+    border: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 50px;
+    padding-right: 10px;
+    font-size: 17px;
+    font-family: Tajawal !important;
+    outline: none;
+    margin-left: 20px;
 }
 
 ::placeholder {
@@ -404,336 +341,37 @@ ul.highlightTextIn a:before{
     font-size: 14px;
 }
 
-#user:focus {
-    border-color: #ffbf3ee1;
-}
-
-.parent-btn {
-    margin-top: 10px;
-    visibility: hidden;
-}
 .img-cart-btn {
-    height: 60px;
-    width: 80px;
-    padding-bottom: 8px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 15px;
-    border-radius: 30px;
+    position: relative;
+    height: 40px;
+    width: 40px;
     margin-right: 15px;
-    transition: transform .30s;
 }
 
-span {
-    height: 22px;
+.parent-button span {
     position: absolute;
-    margin-right: 20px;
-    border-radius: 50%;
-    color: #c51927;
-    padding-left: 7px;
-    padding-right: 7px;
-    font-size: 18px;
+    font-family: Tajawal !important;
 }
 
-.navbar-toggler {
-    margin-top: 10px;
-    width: 45px;
-    height: 49px;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
-
-.navbar-toggler img {
-    height: 50px !important;
-    width: 50px !important;
-}
-
-
-@media (min-width: 100px) and (max-width: 290px) {
-  .parent-button2 {
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 290px) and (max-width: 427px) {
-  .parent-btn {
-    visibility: visible;
-  }
-  .parent-nav {
-    background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
-    margin-right: -15px;
-    display: block;
-    padding-right: 10px;
-    
-  }
-  .nav-bar li{
-    margin-right: 0px !important;
-    text-align: right;
-    padding-right: 15px;
-    font-size: 15px !important;
-  }
-  .navbar {
-    height: 90px;
-  }
-  ul.container a {
-    font-size: 15px !important;
-  }
-  .logo {
-    margin-right: 2px !important;
-    height: 50px !important;
-    width: 110px !important;
-  }
-  .navbar-toggler {
-    height: 40px !important;
-    width: 30px !important;
-    margin-top: 12px;
-    margin-left: 0px;
-  }
-  .navbar-toggler img {
-    height: 40px !important;
-    width: 40px !important;
-    margin-top: -5px;
-    margin-right: -20px;
-  }
-  .parent-button1 {
-    margin-top: 5px;
-    margin-left: -5px;
-
-  }
-  .img-cart-btn {
-    height: 50px !important;
-    width: 70px !important;
-    
-  }
-  .parent-button2 {
-    visibility: hidden;
-  }
-  .dropdown-menu {
-    width: 100%;
-  }
-  #user {
-    margin-top: 10px;
-    margin-right: 5px !important;
-    margin-bottom: 10px !important;
-    font-size: 15px !important;
-  }
-  ::placeholder {
-    font-size: 12px;
-  }
-  .dropdown-menu li a {
-    text-align: right;
-    font-size: 12px !important;
-  }
-}
-
-@media (min-width: 428px) and (max-width: 767px) {
-  .parent-btn {
-    visibility: visible;
-  }
-  .parent-nav {
-    background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
-    margin-right: -15px;
-    display: block;
-    padding-right: 10px;
-  }
-  .nav-bar li{
-    margin-right: 5px !important;
-    text-align: right;
-    padding-right: 15px;
-  }
-  .navbar {
-    height: 90px;
-  }
-  .logo {
-    height: 60px !important;
-    width: 130px !important;
-  }
-  .navbar-toggler {
-    height: 45px !important;
-    width: 38px !important;
-    margin-top: 12px;
-    margin-left: 0px;
-  }
-  .dropdown-menu li a {
-    text-align: right;
-  }
-  .navbar-toggler img {
-    height: 50px !important;
-    width: 50px !important;
-    margin-top: -8px;
-    margin-right: -22px;
-  }
-  .parent-button1 {
-    margin-top: 5px;
-    margin-left: -5px;
-
-  }
-  .img-cart-btn {
-    height: 60px !important;
-    width: 80px !important;
-  }
-  .parent-button2 {
-    visibility: hidden;
-  }
-  .parent-btn2 {
-    margin-right: 200px;
-    visibility: hidden;
-  }
-  .dropdown-menu {
-    width: 100%;
-  }
-  #user {
-    margin-top: 10px;
-    margin-right: 30px !important;
-    margin-bottom: 10px;
-  }
-  .dropdown-menu li a {
-    text-align: right;
-    font-size: 12px !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 775px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 610px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 776px) and (max-width: 782px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 615px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 783px) and (max-width: 787px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 625px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 788px) and (max-width: 800px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 635px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 801px) and (max-width: 810px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 645px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 811px) and (max-width: 821px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 655px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 822px) and (max-width: 833px) {
-  .parent-btn {
-    /* width: 100%; */
-    margin-right: 665px;
-    margin-top: -65px;
-    float: left !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .parent-btn {
-    visibility: visible;
-  }
-  .parent-nav {
-    background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
-    margin-right: -15px;
-    display: block;
-    padding-right: 10px;
-  }
-  .nav-bar li{
-    margin-right: 5px !important;
-    text-align: right;
-    padding-right: 15px;
-  }
-  .navbar {
-    height: 90px;
-  }
-  .logo {
-    /* margin-right: 25px !important; */
-    height: 60px !important;
-    width: 130px !important;
-  }
-  .dropdown-menu li a {
-    text-align: right;
-  }
-  .navbar-toggler {
-    height: 45px !important;
-    width: 35px !important;
-    margin-top: 12px;
-    margin-left: 0px;
-  }
-  .navbar-toggler img {
-    height: 50px !important;
-    width: 50px !important;
-    margin-top: -8px;
-    margin-right: -23px;
-  }
-  .parent-button1 {
-    margin-top: 5px;
-    margin-left: -5px;
-
-  }
-  .img-cart-btn {
-    height: 60px !important;
-    width: 80px !important;
-  }
-  .parent-button2 {
-    visibility: hidden;
-    margin-left: 800px;
-  }
-  .parent-btn2 {
-    /* margin-right: 200px; */
-    visibility: hidden;
-  }
-  .dropdown-menu {
-    width: 100%;
-  }
-  #user {
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-  }
-
-}
-@media (min-width: 992px) and (max-width: 2000px) {
-  .parent-button1 {
-    visibility: hidden;
-  }
-}
-
-
 
 
 /*------------------ panner ------------------------*/
 .parent-panner {
     position: relative;
-    /* display: flex;
-    justify-content: space-between; */
-    margin-top: 110px;
-    /* z-index: -2; */
+    margin-top: 90px;
 }
 
 .contact-panner {
     margin-top: 110px !important;
     direction: rtl;
-    /* width: 600px; */
     margin-right: 50px;
 }
 
@@ -767,7 +405,6 @@ span {
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -801,9 +438,7 @@ span {
 
 .btn-order:before,
 .btn-order:after {
-    /* position: absolute; */
     border: 1px solid rgba(251,75,2,1);
-    /* background: rgba(251,75,2,1) 50%; */
     border-radius: 50px;
     transition: all 0.3s ease;
 }
@@ -938,7 +573,7 @@ span {
 .panner-img {
     position: relative;
     background-color: #ffbf3ee1;
-    width: 70px;
+    width: 80px !important;
     height: 570px;
 }
 
@@ -947,6 +582,7 @@ span {
     margin-top: -5px;
     margin-left: 40px;
 }
+
 @media (min-width: 290px) and (max-width: 343px) {
     .contact-panner p {
         font-size: 10px !important;
@@ -972,7 +608,6 @@ span {
         left: 45px;
         width: 80% !important;
         height: 300px;
-        /* margin-left: 150px !important; */
         margin-top: 10px;
     }
 }
@@ -1106,7 +741,6 @@ span {
 @media (min-width: 751px) and (max-width: 991px) {
     .parent-panner-img img{
         height: 350px;
-        /* width: 180%; */
         margin-left: 20px !important;
     }
 }

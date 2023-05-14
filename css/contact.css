@@ -1,6 +1,6 @@
-body {
-    /* height: 2000px; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+
 
 *{
     margin: 0px;
@@ -8,10 +8,10 @@ body {
     box-sizing: border-box;
 }
 
-@font-face {
-    src: url(../fonts/fonts3/ArbFONTS-Cairo-Bold-3.ttf);
-    font-family:dubai;
+body {
+  font-family: Tajawal !important;
 }
+
 
 /*--------- load ------------*/
 
@@ -22,8 +22,6 @@ body {
     position: fixed;
     width: 100%;
     height: 150%;
-    /* margin-top: -115px; */
-    /* background-color: #ffde6b; */
     background-color: #ffbf3e;
     z-index: 6;
 
@@ -261,146 +259,96 @@ body {
   }
 } 
 
+@media (min-width: 290px) and (max-width: 500px) {
+  .load-h1 {
+      text-align: center;
+      font-size: 30px;
+  }
+  #cooking {
+      height: 70vh;
+      width: 100%;
+  }
+}
+
 /*-------------------- header -------------------*/
-.paernt-nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* background-image: linear-gradient(to right, #fff 30%, #ffbf3ee1); */
-    background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
-    box-shadow: 0 4px 24px 0 rgb(22 20 18 / 10%); 
-    height: 110px;
-    direction: rtl;
-    z-index: 1;
+.navbar {
+  position: fixed;
+  top: 0px !important;
+  left: 0px !important;
+  direction: rtl;
+  background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
+  box-shadow: 0 4px 24px 0 rgb(22 20 18 / 10%); 
+  height: 90px;
+  z-index: 1 !important;
 }
 
-.nav-par {
-    display: flex;
-    margin-top: 25px;
-    margin-left: 50px;
-}
-.parent-logo {
-    display: flex;
-    transition: transform .30s;
-
-}
-.parent-logo:hover {
-    transform: scale(1.02);
-
-}
 .logo {
-    height: 50px;
-    width: 130px;
-    margin-top: 13px;
-    margin-right: 50px;
+  height: 60px !important;
+  width: 130px !important;
+  margin-top: 13px;
 }
 
-.parent-logo h1 {
-    font-family: 'DM Sans', sans-serif;
-    /* font-family: Arial,sans-serif; */
-    font-size: 26px;
-    color: #161412;
-    margin-left: 5px;
-    margin-top: 17px;
+.navbar-nav {
+  gap: 40px;
 }
 
-div.container {
-    font-family: Raleway;
-    margin-top: 20px;
-	padding: 0;
-    margin-right: 30px;
-	text-align: center;
+.navbar-nav li a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: Tajawal;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-div.container a{
-    color: #FFF;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 20px;
-    padding: 0;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+.navbar-nav li a:hover {
+  color: #c51927 !important;
 }
 
-div.highlightTextIn a:before {
-    position: absolute;
-    /* color: #fff; */
-    color: #c51927;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
-    content: attr(alt);
-    transition: all 0.3s;
-    transform: scale(0.8);
-    opacity: 0;
-}
-
-div.highlightTextIn a:hover:before {
-    transform: scale(1);
-    opacity: 1;
-}
-
-div.highlightTextIn a{
-    color: rgba(0, 0, 0, 0.7); 
-}
-
-div.highlightTextIn a:before{
-    transform: scale(1.2);
-} 
-
-.parent-button {
-    display: flex;
-    margin-top: 29px;
-    margin-left: 30px;
+.nav-link.active {
+  color: #c51927 !important;
 }
 
 #user {
-    height: 40px;
-    margin-top: 10px;
-    width: 200px;
-    color: black;
-    border: none;
-    border: 1px solid black;
-    border-radius: 50px;
-    padding-right: 10px;
-    font-size: 17px;
+  height: 40px;
+  width: 200px;
+  color: black;
+  border: none;
+  border: 1px solid #c9c9c9;
+  border-radius: 50px;
+  padding-right: 10px;
+  font-size: 17px;
+  outline: none;
+  margin-left: 20px;
+  font-family: Tajawal !important;
 }
 
 ::placeholder {
-    color: black;
-    opacity: 1;
-    font-size: 14px;
+  color: black;
+  opacity: 1;
+  font-size: 14px;
 }
 
-#user:focus {
-    border-color: #fff;
-}
 
 .img-cart-btn {
-    height: 60px;
-    width: 80px;
-    padding-bottom: 8px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 15px;
-    border-radius: 30px;
-    margin-right: 15px;
-    transition: transform .30s;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
 }
 
-span {
-    height: 22px;
-    position: absolute;
-    margin-right: 20px;
-    border-radius: 50%;
-    color: #c51927;
-    padding-left: 7px;
-    padding-right: 7px;
-    font-size: 18px;
+.parent-button span {
+  position: absolute;
+  font-family: Tajawal !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 

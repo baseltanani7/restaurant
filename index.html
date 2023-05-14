@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,84 +37,122 @@
         <!-- end load -->
 
         <!-- start header -->
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light px-lg-5 d-none d-lg-block fixed-top">
             <div class="container-fluid">
-                <div class="parent-logo col-lg-1 col-md-10 col-7">
-                    <a href="index.html"><img class="logo  navbar-brand" src="imgs/logo2.png"></a>
-                </div>
+                <a href="index.html"><img class="logo img-fluid" src="imgs/logo2.png"></a>
 
-                <div class="parent-btn col-lg-1   d-flex">
-                    <div class="parent-button1">
-                        <span style="font-family: dubai;">0</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 pe-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">المنيو</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">إتصل بنا</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <div>
+                            <input type="text" id="user" placeholder="إبحث عن وجبتك ... " style="font-family: dubai;">
+                        </div>
+
+                        <div class="parent-button">
+                            <span>0</span>
+                            <img class="img-cart-btn" src="imgs/room-service.png">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light px-lg-5 d-block d-lg-none fixed-top">
+            <div class="container-fluid">
+                <a href="index.html"><img class="logo img-fluid" src="imgs/logo2.png"></a>
+
+                <div class="d-flex">
+                    <div class="parent-button ms-2">
+                        <span>0</span>
                         <img class="img-cart-btn" src="imgs/room-service.png">
                     </div>
-                    <button class="navbar-toggler" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarSupportedContent" 
-                        aria-controls="navbarSupportedContent" 
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <img src="imgs/menu4.png" alt="">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                
-                <div class="  parent-nav  collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav-bar navbar-nav me-auto highlightTextIn container gray">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" style="font-family: dubai;">الرئيسية</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menu.html" style="font-family: dubai;">المنيو</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="font-family: dubai;">خدماتنا</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: dubai;">إتصل بنا</a></li>
-                    </ul>
-                    <div>
-                        <input type="text" id="user" placeholder="إبحث عن وجبتك ... " required style="font-family: dubai;">
-                    </div>
-                </div>
 
-                <div class="parent-btn2 col-lg-1  d-flex">
-                    <div class="parent-button2">
-                        <span style="font-family: dubai;">0</span>
-                        <img class="img-cart-btn" src="imgs/room-service.png">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav text-center mb-2 pe-5 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">المنيو</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">خدماتنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">إتصل بنا</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- end header -->
 
+
         <!-- start panner -->
         <section class="parent-panner">
             <div class="container-fluid">
                 <div class="row justify-content-between">
-
-                    <div class="animate__animated animate__fadeInLeft animate__delay-2s     panner-img col-lg-4 col-md-6 col-12">
+                    <div class="panner-img col-md-6 col-12">
                         <div class="parent-panner-img">
-                            <img class="animate__animated animate__jackInTheBox  animate__delay-2s " src="imgs/burger4.png">
+                            <img class="pt-4 pt-md-0" src="imgs/burger4.png">
                         </div>
                     </div>
 
-                    <div class="contact-panner  col-md-6 col-12">
+                    <div class="contact-panner col-md-6 col-12">
                         <div>
-                            <h1 class="animate__animated animate__fadeIn animate__delay-.5s   contact-panner-best" style="font-family: dubai">طري على قلبك من </h1> 
-                            <div class="animate__animated animate__fadeIn animate__delay-.5s   contact-panner2" style="font-family: dubai">
-                                <h1 class="contact-panner-burger" style="font-family: dubai">هنجري بطن</h1>
+                            <h1 class="contact-panner-best">طري على قلبك من </h1> 
+                            <div class="contact-panner2">
+                                <h1 class="contact-panner-burger">هنجري بطن</h1>
                                 <img class="contact-panner-boint" src="imgs/point.png">
                             </div>
                         </div>
-                        <p class="animate__animated animate__fadeIn animate__delay-0.9s" style="font-family: dubai">تطوير الذات هو عبارة عن نشاطات تطور الوعي والهوية وتطور 
+
+                        <p>تطوير الذات هو عبارة عن نشاطات تطور الوعي والهوية وتطور 
                             <br>المواهب والإمكانية، وتكون أساس الانسان في الكثير من 
                             <br>المجالات وتسهل فرص العمل وتحسين معيشة الحياة وتساهم
                             <br>في استيعاب الأحلام والطموح، تطوير الذات ليس محدوداً علي فئة بعينها.
                         </p>
-                        <button class="animate__animated animate__fadeIn animate__delay-0.95s   custom-btn btn-order" style="font-family: dubai">إطلب الأن</button>
-                        <button class="animate__animated animate__fadeIn animate__delay-0.95s   custom-btn btn-reserve" style="font-family: dubai">إحجز</button>
+
+                        <button class="custom-btn btn-order">إطلب الأن</button>
+                        <button class="custom-btn btn-reserve">إحجز</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end header -->
+
+        <!-- end panner -->
 
         <!-- start card burger -->
-        <section class="parent-card-burger">
+        <!-- <section class="parent-card-burger">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -178,11 +216,11 @@
                     </div>
                 
             </div>
-        </section>
+        </section> -->
         <!-- end card burger -->
 
         <!-- start parent plase -->
-        <section class="parent-img-Plase">
+        <!-- <section class="parent-img-Plase">
             <div class="container">
 
                 <div class="row">
@@ -255,11 +293,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end parent plase -->
 
         <!-- start section burger plase -->
-        <section class="parent-burger-Plase">
+        <!-- <section class="parent-burger-Plase">
             <div class="container">
                 <div class="row">
 
@@ -291,11 +329,11 @@
                 </div>
             </div>
             
-        </section>
+        </section> -->
         <!-- end section burger plase -->
 
         <!-- start section informatiom resturent -->
-        <section class="parent-informatiom-resturent">
+        <!-- <section class="parent-informatiom-resturent">
             <div class="informatiom-resturent-chef">
                 <div class="returent">
                     <h1>02</h1>
@@ -321,13 +359,12 @@
                     <p style="font-family: dubai">طبق طعام</p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end section informatiom resturent -->
 
         <!-- start footer -->
-        <hr class="footer-hr">
-        <section class="footer">
-
+        <!-- <hr class="footer-hr"> -->
+        <!-- <section class="footer">
             <div class="footer-logo">
                 <img src="imgs/logo2.png">
                 <h1 style="font-family: dubai">طري على قلبك من
@@ -372,10 +409,9 @@
                 <label>رسالتك : *</label>
                 <textarea class="textarea-custom" placeholder = "رسالتك..." rows="" cols="" name="masseg" form="" style="font-family: dubai;"></textarea>
                 <input class="btn-footer-form" type="submit" value="إرسال" style="font-family: dubai"/>
-                <!-- <button class="btn-footer-form" style="font-family: dubai">إرسال</button> -->
             </form>
 
-        </section>
+        </section> -->
         <!-- end footer -->
         <!-- <hr class="end-footer-hr">
         <div class="parent-end-footer">

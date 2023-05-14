@@ -41,7 +41,7 @@
 
     //end load first page
     $(window).on('load' ,function() {
-        $('.parent-load').fadeOut(4000);
+        $('.parent-load').fadeOut(9000);
     });
 
     //fixed nav bar in top bage
@@ -51,57 +51,72 @@
     });
 
 
-    var label = document.getElementsByTagName('label');
-        label[0].style.marginTop = '45px';
-        label[0].style.marginRight = '10px';
-        label[0].style.fontFamily = "dubai";
-        label[0].style.fontSize = "13px";
+    // const links = document.querySelectorAll('.nav-link');
+    
+    // if (links.length) {
+    // links.forEach((link) => {
+    //     link.addEventListener('click', (e) => {
+    //     links.forEach((link) => {
+    //         link.classList.remove('active');
+    //     });
+    //     e.preventDefault();
+    //     link.classList.add('active');
+    //     });
+    // });
+    // }
 
-        label[1].style.marginTop = '10px';
-        label[1].style.marginRight= '10px';
-        label[1].style.fontFamily = "dubai";
-        label[1].style.fontSize = "13px";
 
-        label[2].style.marginTop = '-10px';
-        label[2].style.marginRight= '10px';
-        label[2].style.fontFamily = "dubai";
-        label[2].style.fontSize = "13px";
+    // var label = document.getElementsByTagName('label');
+    //     label[0].style.marginTop = '45px';
+    //     label[0].style.marginRight = '10px';
+    //     label[0].style.fontFamily = "dubai";
+    //     label[0].style.fontSize = "13px";
 
-    function validation() {
-        var valid = true;
-        var fullName = document.regForm.fullName.value;
-        var email = document.regForm.email.value;
-        var label = document.getElementsByTagName('label');
+    //     label[1].style.marginTop = '10px';
+    //     label[1].style.marginRight= '10px';
+    //     label[1].style.fontFamily = "dubai";
+    //     label[1].style.fontSize = "13px";
 
-        if (fullName == "") {
-            label[0].innerHTML = "الحقل فارغ : *";
-            label[0].style.color = 'red';
-            valid = false;
-        } else if (!isNaN(fullName)) {
-            label[0].innerHTML = "يرجى كتابه نص فقط: *";
-            label[0].style.color = 'red';
-            valid = false;
-        } else {
-            label[0].innerHTML = 'الأسم كامل : *'; 
-            label[0].style.color = 'black';
-            valid = (valid) ? true : false;
-        }
+    //     label[2].style.marginTop = '-10px';
+    //     label[2].style.marginRight= '10px';
+    //     label[2].style.fontFamily = "dubai";
+    //     label[2].style.fontSize = "13px";
 
-        var at = email.indexOf('@');
-        if (email == "") {
-            label[1].innerHTML = "الحقل فارغ : *";
-            label[1].style.color = 'red';
-            valid = false;
-        } else if (at == -1) {
-            label[1].innerHTML = 'يرجى وضع علامه @ : *';
-            label[1].style.color = 'red';
-            valid = false;
-        } else { 
-            label[1].innerHTML =  "الأيميل : *";
-            label[1].style.color = 'black';
-            valid = (valid) ? true : false;
-        }
+    // function validation() {
+    //     var valid = true;
+    //     var fullName = document.regForm.fullName.value;
+    //     var email = document.regForm.email.value;
+    //     var label = document.getElementsByTagName('label');
 
-        return valid;
-    }
+    //     if (fullName == "") {
+    //         label[0].innerHTML = "الحقل فارغ : *";
+    //         label[0].style.color = 'red';
+    //         valid = false;
+    //     } else if (!isNaN(fullName)) {
+    //         label[0].innerHTML = "يرجى كتابه نص فقط: *";
+    //         label[0].style.color = 'red';
+    //         valid = false;
+    //     } else {
+    //         label[0].innerHTML = 'الأسم كامل : *'; 
+    //         label[0].style.color = 'black';
+    //         valid = (valid) ? true : false;
+    //     }
+
+    //     var at = email.indexOf('@');
+    //     if (email == "") {
+    //         label[1].innerHTML = "الحقل فارغ : *";
+    //         label[1].style.color = 'red';
+    //         valid = false;
+    //     } else if (at == -1) {
+    //         label[1].innerHTML = 'يرجى وضع علامه @ : *';
+    //         label[1].style.color = 'red';
+    //         valid = false;
+    //     } else { 
+    //         label[1].innerHTML =  "الأيميل : *";
+    //         label[1].style.color = 'black';
+    //         valid = (valid) ? true : false;
+    //     }
+
+    //     return valid;
+    // }
 
