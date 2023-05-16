@@ -2265,11 +2265,11 @@ p {
         margin-top: 30px !important;
     }
     .plase-contact h1 {
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
     .plase-contact p {
-        font-size: 10px !important;
+        font-size: 15px !important;
         text-align: center;
     }
     .size-plaser {
@@ -2281,6 +2281,7 @@ p {
     }
 
     .prise-plaser p {
+        padding-top: 3px;
         font-size: 12px !important;
     }
     .btn-order-plaser {
