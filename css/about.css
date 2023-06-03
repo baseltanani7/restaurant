@@ -290,18 +290,19 @@ body {
     direction: rtl;
     background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
     box-shadow: 0 4px 24px 0 rgb(22 20 18 / 10%); 
-    height: 90px;
+    height: 80px;
     z-index: 3 !important;
 }
 
 .logo {
-    height: 60px !important;
-    width: 130px !important;
+    height: 50px !important;
+    width: 110px !important;
     margin-top: 13px;
 }
 
 .navbar-nav {
-    gap: 40px;
+    gap: 20px;
+    margin-top: 5px;
 }
 
 .navbar-nav li a {
@@ -310,7 +311,7 @@ body {
     font-family: Tajawal;
     cursor: pointer;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .navbar-nav li a:hover {
@@ -324,7 +325,7 @@ body {
 }
 
 #user {
-    height: 40px;
+    height: 35px;
     width: 200px;
     color: black;
     border: none;
@@ -335,6 +336,7 @@ body {
     font-family: Tajawal !important;
     outline: none;
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 ::placeholder {
@@ -345,13 +347,15 @@ body {
 
 .img-cart-btn {
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
     margin-right: 15px;
 }
 
 .parent-button span {
     position: absolute;
+    margin-top: 5px;
     font-family: Tajawal !important;
 }
 
@@ -389,8 +393,8 @@ body {
     content: "";
     position: absolute;
     width: 100% !important;
-    height: 119% !important;
-    top: -90px;
+    height: 121.5% !important;
+    top: -100px;
     left: 0px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;

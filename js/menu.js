@@ -1,7 +1,16 @@
 //end load first page
+// $(window).on('load' ,function() {
+//     $('.parent-load').fadeOut(3000);
+// });
+
 $(window).on('load' ,function() {
-    $('.parent-load').fadeOut(3000);
+    setTimeout(function(){
+        $('.parent-load').addClass('remove');
+    }, 2000);
 });
+
+
+
 //fixed nav bar in top bage
 window.addEventListener('scroll' , function(){
     let header = this.document.querySelector('.paernt-nav');
