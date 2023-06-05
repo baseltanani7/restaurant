@@ -1,11 +1,11 @@
     //make animatin use scrolling
     window.onscroll = function() {
-        var theta = document.documentElement.scrollTop / 100;
-        document.getElementById('img-plase1').style.transform ='rotate(' + theta + 'rad)';
+        // var theta = document.documentElement.scrollTop / 250;
+        // document.getElementById('img-plase1').style.transform ='rotate(' + theta + 'rad)';
 
-        document.getElementById('img-plase2').style.transform ='rotate(-' + theta + 'rad)';
+        // document.getElementById('img-plase2').style.transform ='rotate(-' + theta + 'rad)';
 
-        document.getElementById('img-plase3').style.transform ='rotate(' + theta + 'rad)';
+        // document.getElementById('img-plase3').style.transform ='rotate(' + theta + 'rad)';
 
         let parentBurgerPlase = document.querySelector('.parent-burger-Plase');
         if(window.scrollY > parentBurgerPlase.offsetTop - 850){
@@ -30,11 +30,11 @@
         }
 
         let img = document.querySelector('.parent-burger-Plase img');
-        if(window.scrollY > img.offsetTop - 650){
+        if(window.scrollY > img.offsetTop - 700){
             img.style.animation = 'transformOverlay1 3s';
         }
         let plasecontact = document.querySelector('.plase-contact');
-        if(window.scrollY > plasecontact.offsetTop - 650){
+        if(window.scrollY > plasecontact.offsetTop - 700){
             plasecontact.style.animation = 'transformOverlay2 3s';
         }
     };
@@ -126,3 +126,6 @@
     //     return valid;
     // }
 
+
+
+ 

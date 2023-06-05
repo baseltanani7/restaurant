@@ -9,6 +9,7 @@
 
 body {
     font-family: Tajawal !important;
+    /* height: 1500px; */
 }
 
 
@@ -392,9 +393,9 @@ body {
 }
 
 .contact-panner-boint {
-    height: 10px !important;
-    width: 10px !important;
-    margin-top: 40px !important;
+    height: 8px !important;
+    width: 8px !important;
+    margin-top: 35px !important;
 }
 
 .contact-panner p {
@@ -577,10 +578,11 @@ body {
     position: relative;
     background-color: #ffbf3ee1;
     width: 80px !important;
-    height: 570px;
+    height: 483px;
 }
 
 .panner-img img{
+    height: 490px;
     position: relative;
     margin-top: -5px;
     margin-left: 40px;

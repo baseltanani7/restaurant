@@ -9,9 +9,9 @@
 
 body {
     font-family: Tajawal !important;
-    height: 2000px;
+    height: 1500px;
+    direction: rtl
 }
-
 
 
 /*--------- load ------------*/
@@ -26,7 +26,7 @@ body {
     /* margin-top: -115px; */
     /* background-color: #ffde6b; */
     background-color: #ffbf3e;
-    z-index: 10 !important;
+    z-index: 2 !important;
 
 }
 
@@ -273,30 +273,22 @@ body {
         width: 100%;
     }
 }
-
 .parent-load.remove {
     visibility: hidden;
     opacity: 0;
 }
 
 
-
-
 /*-------------------- header -------------------*/
 .navbar {
-    position: relative !important;
+    position: fixed;
     top: 0px !important;
     left: 0px !important;
     direction: rtl;
     background-image: linear-gradient(to right, #fff 30%, #ffbf3e);
     box-shadow: 0 4px 24px 0 rgb(22 20 18 / 10%); 
     height: 80px;
-    z-index: 3 !important;
-}
-
-.navbar.fixed {
-    position: fixed !important;
-    width: 100%;
+    z-index: 1 !important;
 }
 
 .logo {
@@ -360,7 +352,7 @@ body {
 
 .parent-button span {
     position: absolute;
-    margin-top: 5px;
+    padding-top: 5px;
     font-family: Tajawal !important;
 }
 
@@ -374,98 +366,40 @@ body {
 }
 
 
-/*------------ panner -----------------*/
 
-.parent-panner {
-    position: relative;
+
+
+/*---------- first section -------------*/
+
+.titel {
+    margin-top: 150px;
+    color: #c51927;
+}
+
+.img-products img {
+    height: 550px !important;
     width: 100%;
-    top: 0px;
-    left: 0px;
-    direction: rtl;
 }
 
-.img {
-    position: relative;
-}
-
-.img img {
-    width: 100%;
-    height: 100% !important;
-}
-
-.img::before {
-    content: "";
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.contact-panner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    /* transform: translate(-50%, -50%); */
-    color: #fff;
-    z-index: 2;
+.card img {
+    height: 300px;
+    /* width: 300px; */
 }
 
 
-/*------------ teams -----------------*/
-.teams {
-    background-color: #f9f9f9;
+.btn {
+    background-color: #ffbf3e !important;
+    transition: 10s;
 }
 
-.bg-contact {
-    background-color: rgb(249, 249, 249);
-    background-image: url(https://makburger.se/wp-content/uploads/2021/09/aPngtreeagourmet-daytime-food-burger-shooting_1492975-scaled.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    position: static;
+.btn-more:hover {
+    background-color: transparent !important;
+    border: 1px solid #ffbf3e !important;
 }
 
-
-.content {
-    background-color: #ffbf3e;
-    padding: 150px 50px;
-    max-width: 350px;
-    display: block;
-    margin-inline: auto;
-}
-
-.line {
-    width: 100px;
-    border-top: 2px solid #c51927;
-    margin-top: -100px !important;
-    display: block;
-    margin-inline: auto;
-}
-
-.content h3 {
-    padding-top: 100px;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 500px) {
-    .content {
-        max-width: 250px;
+@media (max-width: 767px) {
+    .img-products img {
+        height: 100% !important;
     }
 }
 
@@ -709,3 +643,5 @@ body {
         padding-right: 0px;
     }
 }
+
+
