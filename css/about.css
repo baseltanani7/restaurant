@@ -400,7 +400,7 @@ body {
     height: 100% !important;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -430,7 +430,7 @@ body {
     background-color: rgb(249, 249, 249);
     background-image: url(https://makburger.se/wp-content/uploads/2021/09/aPngtreeagourmet-daytime-food-burger-shooting_1492975-scaled.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     margin-top: 50px;
     position: static;
@@ -439,7 +439,7 @@ body {
 
 .content {
     background-color: #ffbf3e;
-    padding: 150px 50px;
+    padding: 150px 0px;
     max-width: 350px;
     display: block;
     margin-inline: auto;
